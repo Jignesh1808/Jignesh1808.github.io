@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samsung Product Showcase</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1610901457484-22d8fce26163') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    header, footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: rgba(0, 0, 0, 0.9);
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+    .container {
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #000;
+    }
+    .product {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input, select {
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+    }
+    video {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Samsung Product Showcase</h1>
+</header>
+
+<nav>
+  <a href="#phones">Phones</a>
+  <a href="#tvs">TVs</a>
+  <a href="#accessories">Accessories</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+  <h2>Search & Filter Products</h2>
+  <input type="text" placeholder="Search for Samsung products...">
+  <select>
+    <option value="price-low">Price: Low to High</option>
+    <option value="price-high">Price: High to Low</option>
+    <option value="rating">Top Rated</option>
+  </select>
+
+  <div class="product" id="phones">
+    <h3>Samsung Galaxy S24 Ultra</h3>
+    <img src="https://images.samsung.com/is/image/samsung/p6pim/in/2402/gallery/in-galaxy-s24-ultra-sm-s928bzkgins-thumb-539106352?$172_172_PNG$" alt="Galaxy S24" width="200">
+    <p>The ultimate in mobile technology, with stunning display and camera features.</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="product" id="tvs">
+    <h3>Samsung Neo QLED TV</h3>
+    <img src="https://images.samsung.com/is/image/samsung/assets/global/tvs/neo-qled-overview-featured-image.jpg" alt="Neo QLED" width="200">
+    <p>Experience the brilliance of Quantum Matrix Technology for stunning visuals.</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="product" id="accessories">
+    <h3>Galaxy Buds2 Pro</h3>
+    <img src="https://images.samsung.com/is/image/samsung/p6pim/in/2208/gallery/in-galaxy-buds2-pro-r510-sm-r510nzalinu-thumb-531263129?$172_172_PNG$" alt="Galaxy Buds2 Pro" width="200">
+    <p>Premium wireless earbuds with immersive sound and active noise canceling.</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="product">
+    <h3>Product Introduction Video</h3>
+    <video controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<footer id="contact">
+  <h3>Contact Us</h3>
+  <form>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Your Message" rows="4"></textarea>
+    <button type="submit">Send</button>
+  </form>
+  <p>&copy; 2025 Samsung Showcase. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
